@@ -5,7 +5,7 @@ import '../styles/Game.css';
 import ResultDialog from './dialog/ResultDialog';
 
 // jsonファイルのパス定数
-const JSON_PATH: string = 'public/data/letters.json';
+const JSON_PATH: string = `${import.meta.env.BASE_URL}data/letters.json`;
 // 最大時間表示の定数
 const MAX_TIME: string = '99:99';
 // 取得する文字数の定数
