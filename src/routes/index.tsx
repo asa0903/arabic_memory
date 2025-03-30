@@ -5,7 +5,7 @@ import Game from '../pages/Game';
 function AppRoutes() {
   return (
     <>
-      <BrowserRouter basename='/arabic_memory'>
+      <BrowserRouter basename={import.meta.env.DEV ? '/' : '/arabic_memory'}>
         <Routes>
           <Route path='/' element={<Start />} />
           <Route path='/*' element={<Start />} />
